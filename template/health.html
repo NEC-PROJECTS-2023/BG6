@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Life Line</title>
+    <link href='https://fonts.googleapis.com/css?family=Josefin Sans' rel='stylesheet'>
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/form_style.css') }}">
+    <nav>
+    <label class="logo">LIFE LINE</label>
+</nav>
+</head>
+
+<body>
+<div class="heading">
+    <h1>Predict the cost of your Medical Insurance!</h1>
+</div>
+<form action='/predict' method="POST">
+    <div class="parent">
+     <div class="child">
+    <label>Age :</label><br><br>
+    <input type="number" name="age" placeholder="     Age > 18" min="18"  max="64" required="required" class="input"><br>
+    </div>
+    <div class="child" >
+    <label>Gender :</label><br><br>
+    <input type="number" name="gender" placeholder="      0-Male / 1-Female"  min="0" max="1" required="required" class="input" ><br>
+    </div>
+    <div class="child">
+    <label>BMI :</label><br><br>
+    <input type="number" name="bmi" placeholder="     BMI" required="required" class="input"><br>
+     </div>
+    </div>
+    <div class="parent2">
+     <div class="child2">
+    <label>Children :</label><br><br>
+    <input type="number" name="children" placeholder="       0 for None" required="required" class="input"><br>
+    </div>
+    <div class="child2">
+    <label>Do you smoke ?</label><br><br>
+    <input type="number" name="smoke" placeholder="   1-Yes / 0-No"  max="1" min="0" required="required" class="input"><br>
+    </div>
+        <div class="child2">
+    <label>Region :</label><br><br>
+    <input type="number" name="region" placeholder="  1-SW / 2-SE / 3-NW / 4-NE" max="4" min="1" required="required" class="input"><br>
+    </div>
+    </div>
+    <div class="bt">
+    <button type="submit">Predict</button>
+    </div>
+</form>
+</body>
+</html>

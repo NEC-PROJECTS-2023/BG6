@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:https="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Life Line</title>
+    <link href='https://fonts.googleapis.com/css?family=Josefin Sans' rel='stylesheet'>
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/style.css') }}">
+</head>
+
+<body>
+<nav>
+    <label class="logo">LIFE LINE</label>
+</nav>
+<section class="about">
+    <div class="main">
+        <img src="https://images.moneycontrol.com/static-mcnews/2021/11/Health-insurance-770x433.jpg?
+        impolicy=website&width=770&height=431">
+        <div class="about-text">
+            <h1>About Us</h1>
+            <h5>Health Insurance <span>Cost Prediction</span></h5>
+            <p>Life Line is a health insurance cost prediction system. This website helps you to predict health insurance cost of the user
+            with the help of the attributes given by the user. To know your health insurance cost click on get started.</p>
+            <button type="button" onclick="window.location.href='{{ url_for('health') }}';">Get Started</button>
+        </div>
+    </div>
+</section>
+
+</body>
+</html>
